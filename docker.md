@@ -1,8 +1,22 @@
-Aby wyświetlić listę wszystkich aktywnych (uruchomionych) kontenerów, użyj:
+### Docker
+
+* Lista wszystkich aktywnych (uruchomionych) kontenerów
+
+```
 docker ps
+```
+<br>
 
-Jeśli chcesz zobaczyć również kontenery, które są zatrzymane (nieaktywne), użyj polecenia z opcją -a:
+
+* Lista pełna również kontenerów zatrzymanych (nieaktywne)
+
+```
 docker ps -a
+```
+<br>
 
-Aby zobaczyć bardziej szczegółowe informacje w formie listy, możesz użyć polecenia z opcją --format. Na przykład:
+* Szczegółowe informacje w formie listy
+
+```
 docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+```
