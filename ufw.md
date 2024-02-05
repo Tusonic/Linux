@@ -1,5 +1,11 @@
 ## Uncomplicated Firewall
 ### Instalacja UFW
+
+* Instalacja
+```
+apt install ufw
+```
+
 * Sprawdzenie statusu
 ```
 ufw status
@@ -44,6 +50,7 @@ ufw allow [port]
 ```
 ufw status numbered
 ```
+
 
 
 
