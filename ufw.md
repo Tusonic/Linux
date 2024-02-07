@@ -51,6 +51,20 @@ ufw allow [port]
 ufw status numbered
 ```
 
+### DELETE (usuwanie)
+
+* Wyświetlenie listy
+```
+ufw status numbered
+```
+```
+ufw delete 2
+```
+```
+sudo ufw delete allow 22
+```
+
+
 
 
 
