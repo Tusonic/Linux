@@ -62,3 +62,18 @@ lub kilku
 ```
 docker rm {id_kontener} {id_kontener} {id_kontener}
 ```
+
+### Uruchomienie docker-compose.yml
+
+* Start docker-compose.yml (foreground)
+
+```
+docker-compose up
+```
+
+* Start docker-compose.yml (detached)
+
+```
+docker-compose up -d
+```
+
