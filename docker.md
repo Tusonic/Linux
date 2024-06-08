@@ -68,12 +68,12 @@ docker rm {id_kontener} {id_kontener} {id_kontener}
 * Start docker-compose.yml (foreground)
 
 ```
-docker-compose up
+docker compose up
 ```
 
 * Start docker-compose.yml (detached)
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
