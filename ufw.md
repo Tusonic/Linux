@@ -1,3 +1,4 @@
+
 ## Uncomplicated Firewall
 ### Instalacja UFW
 
@@ -64,7 +65,29 @@ ufw delete 2
 sudo ufw delete allow 22
 ```
 
+### PRZYDATNE
+* Odblokowanie całego zakresu portów
+```
+ufw allow [port]:[port]
+```
+* Dodanie reguły dla konkretnego protokołu (TCP lub UDP)
+```
+ufw allow [port]/[protocol]
+```
+przykład: ufw allow 1000:2000/tcp
 
+### LOGOWANIE 
+* Włączenie logowania
+```
+ufw logging on
+```
 
+* Wyłączenie logowania
+```
+ufw logging off
+```
 
-
+* Ustawienie poziomu logowania (low, medium, high, full)
+```
+ufw logging [level]
+```
