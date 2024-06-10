@@ -77,3 +77,22 @@ docker compose up
 docker compose up -d
 ```
 
+### Usługi docker
+
+* Zatrzymanie usługi Docker
+
+```
+systemctl stop docker
+```
+
+* Sprawdzenie statusu usługi Docker
+
+```
+systemctl status docker
+```
+
+* Uruchomienie ponownie usługi Docker
+
+```
+systemctl start docker
+```
