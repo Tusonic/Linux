@@ -91,3 +91,10 @@ ufw logging off
 ```
 ufw logging [level]
 ```
+
+### RESET
+
+* Jeśli chcesz zresetować wszystkie reguły do domyślnych ustawień
+```
+sudo ufw reset
+```
