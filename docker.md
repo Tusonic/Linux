@@ -96,3 +96,10 @@ systemctl status docker
 ```
 systemctl start docker
 ```
+
+### Backup Docker 
+
+* Kopia zapasowa całego Docker
+```
+/var/lib/docker
+```
