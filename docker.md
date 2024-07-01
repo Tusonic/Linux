@@ -17,6 +17,10 @@ curl -fsSL https://get.docker.com -o install-docker.sh
 ```
 sudo sh install-docker.sh
 ```
+
+```
+apt install docker-compose
+```
 ### Wyświetlanie kontenerów
 
 * Lista wszystkich aktywnych (uruchomionych) kontenerów
