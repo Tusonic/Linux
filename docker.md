@@ -107,3 +107,15 @@ systemctl start docker
 ```
 /var/lib/docker
 ```
+
+### Dodatek
+
+* Zatrzymać wszystkie konenery
+```
+docker stop $(docker ps -a -q)
+```
+
+* Usunąć wszystkie kotenery
+```
+docker rm $(docker ps -a -q)
+```
