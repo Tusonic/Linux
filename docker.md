@@ -119,3 +119,8 @@ docker stop $(docker ps -a -q)
 ```
 docker rm $(docker ps -a -q)
 ```
+
+### Dostęp do kontenera
+```
+docker exec –it <container name> /bin/bash
+```
