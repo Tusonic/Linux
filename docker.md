@@ -56,6 +56,10 @@ docker start {id_kontener}
 ```
 docker stop {id_kontener}
 ```
+* Zatrzymanie wszystkich kontenerów
+```
+docker stop $(docker ps -q)
+```
 <br>
 
 * Usunięcie konteneru (wcześniej musi być zatrzymany)
