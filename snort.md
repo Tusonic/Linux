@@ -73,6 +73,50 @@ ldconfig
 ```
 snort -V
 ```
+### Konfiguracja Snort3
+```
+ip link set dev ens18 promisc on
+```
+```
+ethtool -k ens18 | grep receive-offload
+```
+```
+ethtool -K ens18 gro off lro off
+```
+### Tworzenie snort3-nic.service
+```
+nano /etc/systemd/system/snort3-nic.service
+```
+```
+[Unit]
+Description=Set Snort 3 NIC in promiscuous mode and Disable GRO, LRO on boot
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/ip link set dev ens18 promisc on
+ExecStart=/usr/sbin/ethtool -K ens18 gro off lro off
+TimeoutStartSec=0
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
+```
+```
+systemctl daemon-reload
+```
+```
+systemctl start snort3-nic.service
+```
+```
+systemctl enable snort3-nic.service
+```
+```
+systemctl status snort3-nic.service
+```
+
+
+
 
 
 
